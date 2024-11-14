@@ -360,7 +360,7 @@ struct sock_fprog *parseOCIlinuxseccomp(struct blob_attr *msg)
 			++idx;
 		}
 
-		assert(idx = start_rule_idx);
+		assert(idx == start_rule_idx);
 
 		/* generate argument filter rules */
 		blobmsg_for_each_attr(curn, tbn[OCI_LINUX_SECCOMP_SYSCALLS_ARGS], remn) {
